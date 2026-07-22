@@ -1,9 +1,13 @@
-# Ignore everything
+# 1. Ignore absolutely everything by default
 *
 
-# Do not ignore directories (required to search for files inside folders)
+# 2. Allow Git to look inside all subdirectories 
+# (Without this, files inside folders will be ignored)
 !*/
 
-# Do not ignore PDF and HTML files
+# 3. Whitelist specific file extensions
 !*.pdf
 !*.html
+
+# 4. Whitelist the .gitignore file itself so changes can be tracked
+!.gitignore
